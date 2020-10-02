@@ -1,5 +1,5 @@
 var response = require("http/v4/response");
 
-response.println("Hello World from Eclipse Dirigible!");
+response.println("Hello GitHub World from Eclipse Dirigible!");
 response.flush();
 response.close();
