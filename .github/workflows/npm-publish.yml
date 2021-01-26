@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Kubectl tool installer
+        uses: Azure/setup-kubectl@v1
+      - run: |
+          mkdir $HOME/.kube
+          mkdir $HOME/.kube/config
+          echo "Ala Bala Nica" >> $HOME/.kube/config
       - run: |
           pwd
           ls
