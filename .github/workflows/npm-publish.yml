@@ -4,7 +4,8 @@
 name: Test Release
 
 on:
-  release: [published]
+  release:
+    types: [published]
 
 jobs:
   build:
