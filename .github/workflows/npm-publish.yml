@@ -16,5 +16,5 @@ jobs:
         uses: Azure/setup-kubectl@v1
       - run: |
           mkdir $HOME/.kube
-          echo ${{ secrets.KUBE_CONFIG }} >> $HOME/.kube/config
+          echo "${{ secrets.KUBE_CONFIG }}" >> $HOME/.kube/config
       - run: kubectl get pods
